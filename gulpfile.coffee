@@ -1,6 +1,7 @@
 gulp = require "gulp"
 sass = require "gulp-sass"
 pug = require "gulp-pug"
+img = require "gulp-image"
 
 
 
@@ -16,7 +17,12 @@ exports.make = () =>
           pretty:true
           )
       .pipe gulp.dest 'dest'
-      
+
+exports.img = () =>
+  gulp.src ['src/img/**/*']
+      .pipe img()
+      .pipe gulp.dest 'dest/img'
+
 exports.deploy = () =>
   gulp.src 'dest/**/*'
       .pipe gulp.dest '../chiiichell.github.io'

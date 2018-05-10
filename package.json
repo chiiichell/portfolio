@@ -7,6 +7,7 @@
   "devDependencies": {
     "coffeescript": "^2.2.4",
     "gulp": "4.0.0",
+    "gulp-image": "^4.3.0",
     "gulp-pug": "^4.0.1",
     "gulp-sass": "^4.0.0"
   },
