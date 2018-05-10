@@ -1,3 +1,43 @@
-.hello {
-  color:red;
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg1 {
+  background-image: url('/img/harrods.jpg');
+}
+
+.bg2 {
+  background-image: url('/img/mammamia.jpg');
+}
+
+.bg3 {
+  background-image: url('/img/harrods.jpg');
+}
+
+.bg {
+  width: 100%;
+  min-height: 800px;
+  color: #fff;
+  display: table;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bg > * {
+   display:table-cell;
+   vertical-align: middle;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .bg {    
+    background-attachment: fixed;
+  }
 }
