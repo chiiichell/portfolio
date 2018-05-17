@@ -1,43 +1,44 @@
-html, body {
-  margin: 0;
-  padding: 0;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .bg1 {
-  background-image: url('/img/harrods.jpg');
+    background-image: url("/img/harrods.jpg");
 }
 
 .bg2 {
-  background-image: url('/img/mammamia.jpg');
+    background-image: url("/img/mammamia.jpg");
 }
 
 .bg3 {
-  background-image: url('/img/harrods.jpg');
+    background-image: url("/img/harrods.jpg");
 }
 
 .bg {
-  width: 100%;
-  min-height: 800px;
-  color: #fff;
-  display: table;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    display: table;
+    min-height: 800px;
+    width: 100%;
 }
 
 .bg > * {
-   display:table-cell;
-   vertical-align: middle;
-   text-align: center;
-   margin: 0;
-   padding: 0;
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
 }
 
 @media screen and (min-width: 768px) {
-  .bg {    
-    background-attachment: fixed;
-  }
+    .bg {
+        background-attachment: fixed;
+    }
 }

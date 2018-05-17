@@ -9,7 +9,15 @@
     "gulp": "4.0.0",
     "gulp-image": "^4.3.0",
     "gulp-pug": "^4.0.1",
-    "gulp-sass": "^4.0.0"
+    "gulp-sass": "^4.0.0",
+    "prettier": "^1.12.1",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^0.8.1",
+    "stylelint-scss": "^3.1.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "format": "prettier-stylelint --quiet --write ./src/sass/style.scss"
+  }
 }
