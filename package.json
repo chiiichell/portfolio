@@ -5,6 +5,7 @@
   "author": "Chizuru Misawa",
   "license": "MIT",
   "devDependencies": {
+    "backstopjs": "^3.2.16",
     "coffeescript": "^2.2.4",
     "gulp": "4.0.0",
     "gulp-image": "^4.3.0",
@@ -18,6 +19,9 @@
   },
   "dependencies": {},
   "scripts": {
-    "format": "prettier-stylelint --quiet --write ./src/sass/style.scss"
+    "format": "prettier-stylelint --quiet --write ./src/sass/style.scss",
+    "approve": "backstop approve",
+    "test": "backstop test",
+    "init": "backstop init"
   }
 }
